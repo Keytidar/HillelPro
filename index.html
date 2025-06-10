@@ -14,15 +14,15 @@
   console.log(typeof 123);
   console.log(typeof 'hello');
   console.log(typeof Symbol('id'));
-  function typenull() {
-    test1 = null;
-    if (test1 === null) {
-      console.log(null);
+  function isnull(value) {
+    value = null;
+    if (value === null) {
+      return 'null';
     } else {
       return 'error, not null'; /// typeof cannot be used to check for null, so i had to create a function;
     }
   };
-  typenull();
+  console.log(isnull(null));
   console.log(typeof 19007199254740991n); // BigInt
 </script>
 </html>
