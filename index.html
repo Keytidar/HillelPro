@@ -24,5 +24,17 @@
   };
   console.log(isnull(null));
   console.log(typeof 19007199254740991n); // BigInt
+
+
+
+  const input1 = prompt('Enter first one:');
+  const input2 = prompt('Enter second one:');
+  const input3 = prompt('Enter third one:');
+  console.log(input1, input2, input3);
+  const inputs = [input1, input2, input3];
+  inputs.sort(() => Math.random() - 0.5);
+  console.log(`Randomized: ${inputs[0]}, ${inputs[1]}, ${inputs[2]}`);
+
+
 </script>
 </html>
